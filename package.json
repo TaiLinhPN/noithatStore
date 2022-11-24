@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set PUBLIC_URL=notthat&&react-scripts build",
+    "start": "react-scripts start",
     "build": "set PUBLIC_URL=/wordpress/wp-content/reactpress/apps/noithat/build&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

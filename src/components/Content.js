@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ADS from "./ADS";
 import Blog from "./Blog";
 import Prototype from "./Prodtotye";
@@ -7,15 +7,30 @@ import SmallProduct from "./SmallProduct";
 import Title from "./Title";
 
 const Content = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("https://637f7ad72f8f56e28e8d7201.mockapi.io/product")
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
   return (
     <div>
       <Title name={"SẢN PHẨM MỚI VỀ"} />
 
       <div className="MyRow">
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+        {products.map((product, index) => {
+          if (index < 4) {
+            return (
+              <ProductItem
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                img={product.img}
+                prototype={product.prototype}
+              />
+            );
+          }
+        })}
       </div>
 
       <div className="section_banner">
@@ -31,10 +46,19 @@ const Content = () => {
       <Title name={"SẢN PHẨM MỚI VỀ"} />
 
       <div className="MyRow">
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+        {products.reverse().map((product, index) => {
+          if (index < 4) {
+            return (
+              <ProductItem
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                img={product.img}
+                prototype={product.prototype}
+              />
+            );
+          }
+        })}
       </div>
 
       <div className="section_trending container">
@@ -72,11 +96,10 @@ const Content = () => {
       <Title name={"TƯ VẤN THIẾT KẾ"} />
       <div className="section_blogs">
         <div className="MyRow">
-
-        <Blog />
-        <Blog />
-        <Blog />
-        <Blog />
+          <Blog />
+          <Blog />
+          <Blog />
+          <Blog />
         </div>
       </div>
     </div>

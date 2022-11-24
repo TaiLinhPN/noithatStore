@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi",
+    "price": "12500000",
+    "prototype": "Eno Nội Thất",
+    "img": "https://bizweb.dktcdn.net/thumb/large/100/360/933/products/tu-bep-bang-go-tu-nhien-nho-gon-da-nang-tien-loi-ghs-5787-1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Tủ bếp gia đình gỗ công nghiệp nhỏ gọn đa năng",
+    "price": "5000000",
+    "prototype": "IKEL",
+    "img": "https://bizweb.dktcdn.net/thumb/large/100/360/933/products/tu-bep-gia-dinh-go-cong-nghiep-nho-gon-da-nang-ghs-5786-1.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Tủ bếp gỗ tự nhiên thiết kế đa năng đẹp hiện đại",
+    "price": "9100000",
+    "prototype": "Eno Nội Thất",
+    "img": "https://bizweb.dktcdn.net/thumb/large/100/360/933/products/tu-bep-go-tu-nhien-thiet-ke-da-nang-dep-hien-dai-ghs-5785-f29777f0-9ccf-41eb-ab9a-f265c025a1be.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Mẫu giường ngủ gỗ tự nhiên thiết kế thông minh",
+    "price": "12500000",
+    "prototype": "Eno Nội Thất",
+    "img": "https://bizweb.dktcdn.net/thumb/large/100/360/933/products/ezgif-2-c7f2105dbc1a.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Giường ngủ gỗ tự nhiên kiểu dáng hiện đại",
+    "price": "18500000",
+    "prototype": "Eno Nội Thất",
+    "img": "https://bizweb.dktcdn.net/thumb/large/100/360/933/products/giuong-ngu-go-tu-nhien-kieu-dang-hien-dai-ghs-9062-ava.jpg"
+  }
+]
